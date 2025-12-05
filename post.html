@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="icon.png">
+<title>Group_4 — Article</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">CodeBloom</a>
+    <nav class="top-nav"><a class="nav-link" href="index.html">Home</a></nav>
+  </div>
+</header>
+
+<main class="container">
+  <a class="back" href="index.html">← Back</a>
+  <article class="post-detail">
+    <h1 id="postTitle" class="sticky-title"></h1>
+    <div id="postDate" class="post-date"></div>
+    <div id="postContent" class="post-content"></div>
+    <p class="views">𓁹 <span id="views"></span></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year2"></span> <b>StatusCode:404</b></p></div><br>
+  <img src="whatsappicon.png" id="whatsapp"> <a href="https://wa.me/qr/HFDR7J24SNXSE1"><b>WhatsApp</b></a><br>
+        <img src="telegramicon.png" id="telegram"><a href="t.me/UgglyBoy"><b>Telegram</b></a>
+</footer>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/post.js"></script>
+<script>
+document.getElementById('year2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
